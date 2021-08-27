@@ -5,12 +5,12 @@
  <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <% if current_user.customer_id %>
-          <%= link_to "膣美人オンラインサロン", users_cards_path, class: 'navbar-brand' %>
+          <%= link_to "◯◯オンラインサロン", users_cards_path, class: 'navbar-brand' %>
         <% else %>
-          <%= link_to "膣美人オンラインサロン", users_plans_choice_path(current_user), class: 'navbar-brand' %>
+          <%= link_to "◯◯オンラインサロン", users_plans_choice_path(current_user), class: 'navbar-brand' %>
         <% end %>
       <% else %>  
-        <%= link_to "膣美人オンラインサロン", root_path, class: 'navbar-brand' %>
+        <%= link_to "◯◯オンラインサロン", root_path, class: 'navbar-brand' %>
       <% end %>  
     </ul>   
 <%
