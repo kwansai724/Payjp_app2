@@ -25,23 +25,18 @@
 # #   database: db/production.sqlite3
 
 
-
 default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  # username: root
-  # password: password
-
-development:
-  <<: *default
-  host: db
-  database: docker_development
+  username: root
+  password:
+  socket: /tmp/mysql.sock
 
 
 production:
   <<: *default
   database: payjp_app2_production
-  username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
+                       　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　# productionのuser部分を削除。
   socket: /var/lib/mysql/mysql.sock
