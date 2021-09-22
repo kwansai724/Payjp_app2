@@ -2,4 +2,5 @@
 
 Payjpを使った決済システム
 
-Heroku
+AWS　EC2へデプロイ
+→失敗
