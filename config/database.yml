@@ -38,5 +38,4 @@ production:
   <<: *default
   database: payjp_app2_production
   password: <%= ENV['DATABASE_PASSWORD'] %>
-                       　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　# productionのuser部分を削除。
   socket: /var/lib/mysql/mysql.sock
